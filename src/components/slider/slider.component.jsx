@@ -8,6 +8,8 @@ const Slider = () => {
   const moveToNextSlide = () => {
     if (slideIndex !== sliderData.length - 1) {
       setSlideIndex(slideIndex + 1);
+
+      // to make slide start again to image index 0
     } else if (slideIndex === sliderData.length - 1) {
       setSlideIndex(0);
     }
@@ -16,6 +18,8 @@ const Slider = () => {
   const moveToPreviousSlide = () => {
     if (slideIndex !== 0) {
       setSlideIndex(slideIndex - 1);
+
+      // to make slide jump to the last index image
     } else if (slideIndex === 0) {
       setSlideIndex(sliderData.length - 1);
     }
