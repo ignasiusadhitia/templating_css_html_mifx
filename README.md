@@ -89,7 +89,7 @@ _This is how to run the project on your local environment._
    ```
 2. Open the repo directory
    ```sh
-   cd monsters_rolodex
+   cd templating_css_html_mifx
    ```
 3. Install NPM packages
    ```sh
