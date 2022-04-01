@@ -24,7 +24,7 @@ const sliderData = [
     image: endpoint + `/assets/images/sample3.jpeg`,
     title: "Great EXPERIENCE",
     review:
-      "This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.",
+      "This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again. Loved this place.",
     reviewer: "Ireland Tahlia",
   },
 ];

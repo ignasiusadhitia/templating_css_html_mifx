@@ -23,7 +23,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;    
-    transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out 0.5s;
 
     @media screen and (max-width: 667px) {        
         height: 40%; 
@@ -43,7 +43,7 @@
     text-align: center;
     
     @media screen and (max-width: 667px) {        
-        height: 60%; 
+        height: 60%;         
     }
 }
 
@@ -116,9 +116,11 @@
     display: flex;
     flex-direction: row;
     margin: 1.25em;   
+    position: fixed;
+    bottom: 6em;
     
-    @media screen and (max-width: 667px) {
-        margin-top: 0;
+    @media screen and (max-width: 667px) {        
+        bottom: 0.5em;
     }
 }
 
