@@ -12,21 +12,30 @@
 
 .slider-container {
     height: 100%;
-    width: 50%;     
+    width: 50%;         
     
     @media screen and (max-width: 667px) {        
         width: 100%; 
     }
 }
 
-.image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;    
-    transition: opacity ease-in-out 0.5s;
-
+.mobile {
     @media screen and (max-width: 667px) {        
         height: 40%; 
+    }
+}
+
+.image {     
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    opacity: 0;  
+    transition: opacity ease-in-out 0.5s;
+
+    @media screen and (max-width: 667px) {                
+        height: 100%; 
     }
 }
 
@@ -34,7 +43,7 @@
     opacity: 1;
 }
 
-.review {
+.review {        
     background-color: black;
     display: flex;
     flex-direction: column;

@@ -27,14 +27,18 @@ const Slider = () => {
 
   return (
     <div className="container">
-      <div
-        className={
-          slideIndex === slideIndex + 1
-            ? "slider-container image image-animation"
-            : "slider-container image"
-        }
-        style={{ backgroundImage: `url(${sliderData[slideIndex].image})` }}
-      ></div>
+      <div className="slider-container mobile" style={{ position: "relative" }}>
+        {sliderData.map((slide, index) => (
+          <div
+            className={slideIndex === index ? "image image-animation" : "image"}
+            style={{
+              backgroundImage: `url(${sliderData[slideIndex].image})`,
+              position: "absolute",
+            }}
+          ></div>
+        ))}
+      </div>
+
       <div className="slider-container review">
         <div>
           <h1>Reviews</h1>
